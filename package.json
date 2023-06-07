@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "prismaDev": "dotenv -e .evn.local prisma migrate dev",
+    "prismaDev": "dotenv -e .env prisma migrate dev",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
