@@ -1,5 +1,6 @@
 import { PrismaClient, Prisma} from "@prisma/client";
 import type { satisfies } from "semver";
+import type { Action } from "./$types";
 import type { Actions } from "@sveltejs/kit";
 const _db = new PrismaClient();
 export const actions = {

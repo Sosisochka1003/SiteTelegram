@@ -12,20 +12,20 @@
         invalidateAll();
     }
     
-    const NormalTime = (Time: Date) => {
+    const NormalTime = (Time: Date) =>{
         return Time.toLocaleDateString("ru-RU", {year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric"})
     }
 </script>
 
 <div id="line_block">
     {#each data.users as user}
-        <button on:click={() => GetMessages(user.UserId)} class="users">{user.UserId}, {user.Name}</button><br>
+    <button on:click={() => GetMessages(user.UserId)} class="users">{user.UserId} ,{user.Name}</button><br>
     {/each}
  </div>
 <div id="line_block" class="klema">
     {#each data.messages as message}
         <h2 class="messages" id="{message.Who_send}">{message.MessageText}</h2>
-        <p id={message.Who_send}>{NormalTime(message.TimeSend)}</p>
+        <p id="{message.Who_send}">{NormalTime(message.TimeSend)}</p>
     {/each}
 </div>
 
