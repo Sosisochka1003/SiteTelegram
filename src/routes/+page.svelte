@@ -19,7 +19,7 @@
 
 <div id="line_block">
     {#each data.users as user}
-    <button on:click={() => GetMessages(user.UserId)} class="users">{user.UserId} ,{user.Name}</button><br>
+    <button on:click={() => GetMessages(user.UserId)} class="users">{user.UserId}, {user.Name}</button><br>
     {/each}
  </div>
 <div id="line_block" class="klema">
