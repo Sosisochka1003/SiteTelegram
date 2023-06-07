@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prismaDev": "dotenv -e .evn.local prisma migrate dev",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
@@ -12,6 +13,7 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
+    "dotenv-cli": "^7.2.1",
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-vercel": "^3.0.1",
     "@sveltejs/kit": "^1.5.0",
