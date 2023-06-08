@@ -15,6 +15,9 @@
     const NormalTime = (Time: Date) =>{
         return Time.toLocaleDateString("ru-RU", {year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric"})
     }
+
+    
+
 </script>
 
 <div id="line_block">
